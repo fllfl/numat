@@ -1,0 +1,216 @@
+#tpv #content .colour_mixer {
+	color: #001970;
+	font-weight: bold;
+	border: 1px solid #CCC;
+	padding: 10px;
+}
+
+#tpv #content .colour_mixer a {
+	text-decoration: none;
+	color: #001970;
+}
+
+#tpv #content .colour_mixer .instructions {
+	width: 33%;
+	float: left;
+}
+
+#tpv #content .colour_mixer .instructions * {
+	line-height: 16px;
+	font-size: 12px;
+}
+
+#tpv #content .colour_mixer p {
+	color: #001970;
+}
+
+#tpv #content .colour_mixer p.title {
+	font-size: 14px;
+}
+
+#tpv #content .colour_mixer li {
+	color: #B3282D;
+	margin-bottom: 5px;
+}
+
+#tpv #content .colour_mixer li span {
+	color: #000;
+}
+
+#tpv #content .colour_mixer .mixer {
+	width: 63%;
+	float: right;
+}
+
+#tpv #content .colour_mixer .mixer-inner {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #000;
+	height: 317px;
+	overflow: hidden;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options {
+	font-size: 11px;
+	margin: 0 15px;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options div {
+	float: left;
+	margin: 0 10px;
+	padding: 5px 10px;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options div div {
+	margin: 0;
+	padding: 0;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options div.tab {
+	background-color: #ccc;
+	margin: 0;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	width: 135px;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options div.selected, #tpv #content .colour_mixer .mixer .mixer-options div.selected a {
+	background-color: #000;
+	color: #FFF;
+}
+
+#tpv #content .colour_mixer .mixer .mixer-options div.downloadPDF {
+	color: #BF311A;
+}
+
+/* The colour pickers */
+#tpv #content .colour_mixer .mixer-controls {
+	margin: 30px 0 0 0;
+}
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer {
+	/*width: 8%;
+	float: left;*/
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 10px;
+}
+.mixer-controls td{
+	padding:0;
+	margin:0;
+	width:50px;
+}
+
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer span {
+	font-size: 11px;
+}
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer .mixer-color {
+	border: 3px solid #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 1);
+	box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 1);
+	width: 48px;
+	margin: 5px 10px;
+}
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer .mixer-color .mixer-color-inner a {
+	color: #FFF;
+	font-size: 26px;
+	padding: 10px 2px;
+}
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer .mixer-color .mixer-color-inner {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+	font-size: 17px;
+	padding: 10px 3px;
+}
+
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer .mixer-color .mixer-color-inner .ChangePercentageDown,
+#tpv #content .colour_mixer .mixer-controls .mixer-colour-outer .mixer-color .mixer-color-inner .ChangePercentageUp,
+#tpv #content .mixer-options .tab,
+#tpv #content .downloadPDF,
+#tpv #content .ResetColorMixer {
+	cursor: pointer;
+}
+
+#tpv #content .mixer .mixer-inner .loading-block {
+	color: #FFF;
+	background: #928C8C;
+	position: absolute;
+	padding: 132px 237px;
+	opacity: 0.8;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+
+
+/* Parts Progress bar */
+
+.parts-progress{
+	border:1px solid #555;
+	margin:0 10px;
+	padding: 2px;
+	width:220px;
+	height:22px;
+}
+#tpv #content .colour_mixer .instructions .parts-progress div{
+	width:9px;
+	margin:1px;
+	background:#EEE;
+	float:left;
+	line-height: 20px;
+}
+#tpv #content .colour_mixer .instructions .parts-progress div.active{
+	background:#999;
+}
+
+.parts-amount{
+	margin:0 10px;
+	margin-top:66px;
+	width:220px;
+	text-align: center;
+	font-size:11px;
+	color:#555;
+}
+
+
+
+.ui-dialog-titlebar{
+	display: none;
+}
+.download_area {
+	text-align: center;
+	padding:20px;
+}
+.ui-widget{
+	background: #FFF !important;
+	border: 1px solid #B6B6B6;
+	color: #4F4F4F;
+}
+
+.PDF-only{ display:none; }
+
+.clearfix{
+	clear:both;
+}
+
+.right{
+	float:right;
+}

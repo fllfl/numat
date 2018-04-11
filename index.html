@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/style.css">
+
+		
+
+<title>Numat Color Mixer</title>
+<meta name="description" content="">
+<meta name="generator" content="concrete5 - 5.6.3.4">
+
+<link rel="stylesheet" type="text/css" href="./css/ccm.base.css">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/ccm.base.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/view.css">
+<script type="text/javascript" src="./js/recolorImage.js"></script>
+		<script src="./js/jquery.ui.js"></script>
+		<!--[if lt IE 9]>
+		<script src="/js/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body id="tpv" class="home">
+		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+		<header>
+		</header>
+
+		<div role="main">
+			<div id="content" class="fullWidth" style="background: #fff">
+				<!-- view.css will be auto included for this -->
+
+		<!--[if lte IE 8]>
+		<style>
+			.compat_warning{
+
+			}
+		</style>
+		<div class="compat_warning">
+			This web browser is out of date and doesn't support this content
+		</div>
+	<![endif]-->
+
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js" integrity="sha384-CchuzHs077vGtfhGYl9Qtc7Vx64rXBXdIAZIPbItbNyWIRTdG0oYAqki3Ry13Yzu" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+
+	<div class="colour_mixer-outer">
+		<div class="colour_mixer">
+					<img src="./img/colour_mixer-inPlay.png" id="play_mixer" style="display:none;">
+					<img src="./img/colour_mixer-inPlay.png" id="sport_mixer" style="display:none;">
+			<img src="./img/logo_tpv.png" class="PDF-only" alt""="">
+			<div class="PDF-only reference">
+				<div>
+				Project / Mixer Reference
+				</div>
+			</div>
+			<div class="PDF-only">
+				<br>
+				<br>
+			</div>
+			<div class="clearfix"></div>
+			<div>
+				<h1>NUMATS COLOR MIXER</h1>
+			</div>
+
+			<div class="instructions">
+				<p class="title">INSTRUCTIONS</p>
+				<p>With this colour mixer you can design your own NUMAT TPV mix.</p>
+				<ol>
+					<li>
+						<span>Select your colour granules from the swatches below. You can blend as many as you like.</span>
+					</li>
+					<li>
+						<span>Use the + buttons to add granules and the - buttons to remove them.</span>
+					</li>
+					<li>
+						<span>When you have finished your design and if you like the mix, save or print it as a PDF.</span>
+					</li>
+				</ol>
+				<p>Click reset to start again.</p>
+
+
+				<div class="parts-amount"><span class="amnt">0</span><span class="use-parts" style="display:none;">/20 parts</span><span class="use-perc" style="">%</span></div>
+				<div class="parts-progress">
+					<!-- 20 parts -->
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+					<div>&nbsp;</div>
+				</div>
+
+			</div>
+
+			<div class="mixer">
+				<div class="mixer-inner" style="position: relative;">
+					<img id="image1" width="560" style="position: absolute;">
+					<img src="./img/colour_mixer-inPlay-grid.png" class="grid" width="560" style="position: absolute;">
+					<div class="loading-block" style="display:none;">
+						Loading…<br>
+						<img style="margin: 0 16px;" src="./img/loader.gif">
+					</div>
+				</div>
+				<div class="mixer-overlay PDF-only">
+				</div>
+				<div class="mixer-options">
+					<div class="tab selected" id="Play">InPlay TPV : 1-4mm</div>
+					<div class="tab" id="Sport">InSport TPV : 0.5-1.5mm</div>
+					<div style="width:94px;">
+						<div class="downloadPDF">Save as a PDF</div>
+					</div>
+					<div class="ResetColorMixer">Reset</div>
+				</div>
+				<div class="right PDF-only timestamp">
+					28-11-2017  06:17				</div>
+			</div>
+
+			<br><br>
+			<div class="clearfix"></div>
+
+			<div class="mixer-controls" id="mixer-controls">
+				<table cellpadding="0" cellspacing="0">
+					<tbody><tr>							<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #e7d25b;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="e7d25b">-</a>
+											<a class="ChangePercentageUp" color="e7d25b">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH41<br>
+										<span>Bright Yellow</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #e8c698;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="e8c698">-</a>
+											<a class="ChangePercentageUp" color="e8c698">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH30<br>
+										<span>Beige</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #76975c;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="76975c">-</a>
+											<a class="ChangePercentageUp" color="76975c">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH10<br>
+										<span>Standard Green</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #3869ac;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="3869ac">-</a>
+											<a class="ChangePercentageUp" color="3869ac">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH20<br>
+										<span>Standard Blue</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #a43827;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="a43827">-</a>
+											<a class="ChangePercentageUp" color="a43827">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH01<br>
+										<span>Standard Red</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #e6ddc6;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="e6ddc6">-</a>
+											<a class="ChangePercentageUp" color="e6ddc6">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH31<br>
+										<span>Cream</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #d75615;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="d75615">-</a>
+											<a class="ChangePercentageUp" color="d75615">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH50<br>
+										<span>Orange</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #d0a125;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="d0a125">-</a>
+											<a class="ChangePercentageUp" color="d0a125">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH40<br>
+										<span>Mustard Yellow</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #9a9990;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="9a9990">-</a>
+											<a class="ChangePercentageUp" color="9a9990">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH61<br>
+										<span>Light Grey</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #3396c3;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="3396c3">-</a>
+											<a class="ChangePercentageUp" color="3396c3">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH23<br>
+										<span>Azure Blue</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #5fb146;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="5fb146">-</a>
+											<a class="ChangePercentageUp" color="5fb146">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH11<br>
+										<span>Bright Green</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #4b438c;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="4b438c">-</a>
+											<a class="ChangePercentageUp" color="4b438c">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH21<br>
+										<span>Purple</span>
+									</div>
+								</div>
+							</td>
+							</tr><tr>							<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #77736f;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="77736f">-</a>
+											<a class="ChangePercentageUp" color="77736f">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH60<br>
+										<span>Dark Grey</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #609fd6;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="609fd6">-</a>
+											<a class="ChangePercentageUp" color="609fd6">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH22<br>
+										<span>Sky Blue</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #ce2921;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="ce2921">-</a>
+											<a class="ChangePercentageUp" color="ce2921">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH02<br>
+										<span>Bright Red</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #ae6d3f;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="ae6d3f">-</a>
+											<a class="ChangePercentageUp" color="ae6d3f">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH32<br>
+										<span>Brown</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #df4b87;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="df4b87">-</a>
+											<a class="ChangePercentageUp" color="df4b87">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH90<br>
+										<span>Funky Pink</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #c8c6c7;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="c8c6c7">-</a>
+											<a class="ChangePercentageUp" color="c8c6c7">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH65<br>
+										<span>Pale Grey</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #866a66;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="866a66">-</a>
+											<a class="ChangePercentageUp" color="866a66">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH33<br>
+										<span>Dark Brown</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #57b9c2;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="57b9c2">-</a>
+											<a class="ChangePercentageUp" color="57b9c2">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH26<br>
+										<span>Turquoise</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #121418;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="121418">-</a>
+											<a class="ChangePercentageUp" color="121418">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH70<br>
+										<span>Black</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #9876ac;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="9876ac">-</a>
+											<a class="ChangePercentageUp" color="9876ac">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH25<br>
+										<span>Light Purple</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #479f86;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="479f86">-</a>
+											<a class="ChangePercentageUp" color="479f86">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH12<br>
+										<span>Dark Green</span>
+									</div>
+								</div>
+							</td>
+														<td>
+								<div class="mixer-colour-outer">
+									<div class="mixer-color" style="background: #f6f4f0;">
+										<div class="mixer-color-inner">
+											<div class="percent">0</div><br>
+											<a class="ChangePercentageDown" color="f6f4f0">-</a>
+											<a class="ChangePercentageUp" color="f6f4f0">+</a>
+										</div>
+									</div>
+									<div class="mixer-text">
+										RH80<br>
+										<span>White</span>
+									</div>
+								</div>
+							</td>
+												</tr>
+				</tbody></table>
+			</div>
+
+			<div style="width:90%;color:#000;text-align:center;margin:10px auto;font-size:12px;font-weight:normal;">
+				<strong>Colour Disclaimer:</strong> 
+				Do not rely on screen representation for colour accuracy. We cannot guarantee an exact match and the colour<br> 
+				appearing on screen should not be relied on as being such, swatch colours will vary depending on your screen settings.
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!--[endif]---->			</div>
+			<div class="clearall"></div>
+		</div>
+		<div id="footerContainer">
+			<hr>
+			<footer>
+				<ul>
+					<li class="group">
+						<a>NUMAT</a>
+					</li>
+
+				</ul>
+			</footer>
+			<hr>
+		</div>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34887501-8', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-1" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-1">&nbsp;</span><a href="https://www.rosehilltpv.com/rosehill-tpv-products/colour-mixer/#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="download_area_outer ui-dialog-content ui-widget-content">
+						<div class="download_area">
+						</div>
+					</div></div></body></html>
